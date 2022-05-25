@@ -6,11 +6,6 @@ main {
   position: relative;
 }
 
-.search {
-  border-radius: 50px;
-  background-color: #fff !important;
-}
-
 .searchAndSort {
   position: absolute;
   left: 89px;

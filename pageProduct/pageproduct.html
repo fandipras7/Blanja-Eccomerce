@@ -15,37 +15,66 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="containerme">
-          <div class="logo ms-1 d-flex">
-            <img src="logoBlanja.png" alt="logo" />
-            <h4 class="mt-3 fw-bold">Blanja</h4>
-          </div>
-          <div class="search d-flex text-center">
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Search" />
-            <div class="square text-center">
-              <img class="filterButton" src="Vector.png" alt="" />
-            </div>
-          </div>
-          <div class="tools d-flex">
-            <img class="me-4 mt-2" src="assets/image/shopping-cart (2) 1.png" alt="" />
-            <button class="btnLogin">Login</button>
-            <button class="btnSignIn ms-3">Sign In</button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container myBar">
+          <a class="navbar-brand" href="#"> <img src="assets/image/logoBlanja.png" alt="" width="32" height="44" class="me-2" /> Blanja </a>
+          <form class="d-flex searchAndSort ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-light me-2" type="submit"><i class="fa-solid fa-filter"></i></button>
+          </form>
+          <div class="tools"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse my-auto" id="navbarNav">
+            <ul class="navbar-nav ms-auto ps-2 align-items-center">
+              <li class="nav-item"></li>
+              <li class="nav-item">
+                <button class="btn btn-cart" type="submit"><img src="assets/image/shopping-cart (2) 1.png" alt=""></i></button>
+              </li>
+              <li class="nav-item ms-2 mt-2">
+                <button class="btnLogin">Login</button>
+              </li>
+              <li class="nav-item ms-2 mt-2">
+                <button class="btnSignIn">Sign In</button>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
-    </header>
 
     <main>
       <section id="photo-product">
         <div class="container">
           <h6 class="mt-5">Home > Category > T-Shirt</h6>
           <div class="row">
-            <div class="col-4 mt-5">
-              <div class="main-photo me-3 d-flex flex-column">
-                <img src="assets/image/bajubesar.png" alt="" />
+            <div class="col-12 col-lg-4 mt-5">
+              <!-- <div class="main-photo me-3 d-flex flex-column">
+                <img src="assets/image/bajubesar.png" class="img-fluid" alt="" />
+              </div> -->
+              <div class="row">
+                <div class="col">
+                  <img src="assets/image/bajubesar.png" class="w-100" alt="" />
+                </div>
               </div>
-              <div class="others-photo mt-2 d-flex justify-content-evenly mb-3">
+              <div class="row row-cols-5 mt-2">
+                <div class="col">
+                  <img src="assets/image/b1.png" class="img-fluid" alt="baju1" />
+                </div>
+                <div class="col">
+                  <img src="assets/image/b2.png" class="img-fluid" alt="baju1" />
+                </div>
+                <div class="col">
+                  <img src="assets/image/b3.png" class="img-fluid" alt="baju1" />
+                </div>
+                <div class="col">
+                  <img src="assets/image/b4.png" class="img-fluid" alt="baju1" />
+                </div>
+                <div class="col">
+                  <img src="assets/image/b5.png" class="img-fluid" alt="baju1" />
+                </div>
+              </div>
+              <!-- <div class="others-photo w mt-2 d-flex justify-content-evenly mb-3">
                 <div class="col-2 ms-4 photo-kecil me-3">
                   <img src="assets/image/b1.png" alt="baju1" />
                 </div>
@@ -61,9 +90,9 @@
                 <div class="col-2 photo-kecil">
                   <img src="assets/image/b5.png" alt="baju5" />
                 </div>
-              </div>
+              </div> -->
             </div>
-            <div class="col-8 mt-5">
+            <div class="col-12 col-lg-8 mt-5">
               <p class="fw-bold fs-4">Baju muslim pria</p>
               <p class="fw-light text-success">Zalora Cloth</p>
               <div class="rating d-flex">
@@ -253,8 +282,8 @@
           <div class="similiarProduct">
             <p class="fw-bold fs-4">You can also like this</p>
             <p class="fw-ligth">You've never seen it before</p>
-            <div class="row">
-              <div class="col-2">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -264,7 +293,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -274,7 +303,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -284,7 +313,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -294,7 +323,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -304,7 +333,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -314,7 +343,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -324,7 +353,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
@@ -334,7 +363,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col mb-3">
                 <div class="card">
                   <img src="assets/image/fp.png" alt="..." />
                   <div class="card-body">
