@@ -1,0 +1,93 @@
+@font-face
+
+/*perintah untuk memanggil font eksternal*/
+  {
+  font-family: "Metropolis";
+  src: url("font/Metropolis/Metropolis-Regular.otf");
+  /*memanggil file font eksternalnya di folder nexa*/
+}
+
+body {
+  font-family: "Metropolis";
+  color: black;
+}
+
+.form-control {
+  width: 500px;
+  height: 35px;
+  border-radius: 50px;
+  margin-left: 50px;
+}
+
+.filter {
+  border: 1px solid grey;
+}
+
+.card{
+  box-shadow: 0px 0px 8px rgba(110, 115, 115, 0.25);
+}
+
+#iSelect {
+  color: grey;
+}
+
+.del {
+  /* background-color: red; */
+  position: absolute;
+  right: 10px;
+  color: #DB3022;
+}
+
+.seller {
+  color: #9B9B9B;
+}
+
+.orangeExample {
+  accent-color: #DB3022;
+}
+
+.circle {
+  height: 36px;
+  width: 36px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 50%;
+  background-color: #D4D4D4;
+  color: white;
+  text-align: center;
+  margin-top: -12px;
+}
+
+.plus {
+  color: black;
+  background-color: white;
+  border: 0.5px solid grey;
+}
+
+.circle p {
+  width: 50%;
+}
+
+.produk {
+  display: flex;
+}
+
+.total {
+  display: flex;
+  margin-left: 90px;
+  /* background-color: red; */
+}
+
+.price {
+  position: absolute;
+  right: 14px;
+}
+
+.buy {
+  position: absolute;
+  width: 80%;
+  left: 30px;
+  top: 100px;
+  background-color: #DB3022;
+  color: white;
+}
