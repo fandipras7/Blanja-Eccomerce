@@ -6,6 +6,11 @@ main {
   position: relative;
 }
 
+.search {
+  border-radius: 50px;
+  background-color: #fff !important;
+}
+
 .searchAndSort {
   position: absolute;
   left: 89px;
@@ -106,12 +111,7 @@ main {
 
 /* list produk */
 .card img {
-  margin-top: -41px;
   border-radius: 5px;
-}
-
-.card-body {
-  height: 110px;
 }
 
 #name,
@@ -120,29 +120,22 @@ main {
   color: #000000;
   font-size: 16px;
   font-weight: 500;
-  margin-left: -50px;
-  text-align: left;
+  margin-top: -10px;
 }
 
 #price {
   color: #db3022;
   font-weight: 500;
-  margin-top: 50px;
 }
 
 #seller {
-  color: #db3022;
+  color: #9b9b9b;
   font-weight: 500;
-  margin-top: 70px;
 }
 
-.rating {
-  /* background-color: red; */
+/* .rating {
   height: 30px;
-  text-align: left;
-  margin-top: 75px;
-  margin-left: -15px;
-}
+} */
 
 .caraousell {
   position: relative;
