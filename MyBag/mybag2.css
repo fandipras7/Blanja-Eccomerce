@@ -1,0 +1,245 @@
+@font-face /*perintah untuk memanggil font eksternal*/ {
+  font-family: "Metropolis";
+  src: url("font/Metropolis/Metropolis-Regular.otf");
+  /*memanggil file font eksternalnya di folder nexa*/
+}
+
+body {
+  font-family: "Metropolis";
+  color: black;
+}
+
+.myBar {
+  position: relative;
+}
+
+.searchAndSort {
+  position: absolute;
+  left: 89px;
+}
+
+.form-control {
+  width: 300px;
+  height: 35px;
+  border-radius: 50px;
+  margin-left: 50px;
+}
+
+.btn-sort {
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+}
+
+#mybag {
+  margin-top: 120px;
+}
+
+.card {
+  box-shadow: 0 0px 5px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+}
+.card-bag {
+  margin-top: 110px;
+}
+.minus {
+  border-radius: 100%;
+}
+
+.myBag {
+  margin-top: 100px;
+}
+.title-bag {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.card-details {
+  padding: 30px;
+  border-radius: 11px;
+}
+.delete {
+  color: #db3022;
+}
+.checklist {
+  margin-left: 20px;
+}
+
+.customcheck input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+.customchek input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.checkmak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.customcheck:hover input ~ .checkmark,
+.checkmak {
+  background-color: #ccc;
+}
+
+.customcheck input:checked ~ .checkmark {
+  background-color: #db3022;
+  border-radius: 5px;
+}
+.customcheck input:checked ~ .checkmak {
+  background-color: #db3022;
+  border-radius: 5px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkmak:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customcheck input:checked ~ .checkmark:after {
+  display: block;
+}
+.customcheck input:checked ~ .checkmak:after {
+  display: block;
+}
+
+.customcheck .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.customcheck .checkmak:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.img-products {
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.check {
+  margin-top: -10px !important;
+  position: relative;
+}
+.check-select {
+  margin-top: -3px !important;
+  position: relative;
+}
+.table {
+  border-bottom: none #fff !important;
+}
+.select-all {
+  height: 70px;
+}
+
+.min {
+  border-radius: 50%;
+  background-color: #d4d4d4;
+  border: 0;
+}
+.max {
+  border-radius: 50%;
+}
+.one {
+  margin-left: -500px !important;
+}
+.btn-checkout {
+  background-color: #db3022;
+  border-radius: 40px;
+  color: #fff;
+}
+.title-shoping {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  color: #222222;
+}
+.total-price {
+  color: #9b9b9b;
+  font-weight: 500;
+  line-height: 16px;
+}
+/* @media screen and (max-width: 430px) {
+  .form-control {
+    width: 150px;
+    height: 35px;
+    border-radius: 50px;
+    margin-left: 0px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .searchAndSort {
+    left: 0px;
+  }
+  .form-control {
+    /* width: 250px;
+    height: 35px;
+    border-radius: 50px; */
+    margin-left: 0px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .navbar-nav {
+    text-align: center;
+    display: flex;
+    /* display: non; */
+  }
+
+  .searchAndSort {
+    top: 2px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .form-control {
+    width: 500px;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: 50px;
+  }
+}
