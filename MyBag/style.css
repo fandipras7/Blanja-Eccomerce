@@ -1,7 +1,4 @@
-@font-face
-
-/*perintah untuk memanggil font eksternal*/
-  {
+@font-face /*perintah untuk memanggil font eksternal*/ {
   font-family: "Metropolis";
   src: url("font/Metropolis/Metropolis-Regular.otf");
   /*memanggil file font eksternalnya di folder nexa*/
@@ -12,18 +9,41 @@ body {
   color: black;
 }
 
+.myBar {
+  position: relative;
+}
+
+.searchAndSort {
+  position: absolute;
+  left: 89px;
+}
+
 .form-control {
-  width: 500px;
+  width: 300px;
   height: 35px;
   border-radius: 50px;
   margin-left: 50px;
 }
 
-.filter {
+.btn-sort {
   border: 1px solid grey;
+  background-color: white;
 }
 
-.card{
+.btn {
+  background-color: white;
+  border: none;
+}
+
+#mybag {
+  margin-top: 120px;
+}
+
+/* .filter {
+  border: 1px solid grey;
+} */
+
+.card {
   box-shadow: 0px 0px 8px rgba(110, 115, 115, 0.25);
 }
 
@@ -35,15 +55,15 @@ body {
   /* background-color: red; */
   position: absolute;
   right: 10px;
-  color: #DB3022;
+  color: #db3022;
 }
 
 .seller {
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
 .orangeExample {
-  accent-color: #DB3022;
+  accent-color: #db3022;
 }
 
 .circle {
@@ -52,7 +72,7 @@ body {
   font-size: 25px;
   font-weight: 500;
   border-radius: 50%;
-  background-color: #D4D4D4;
+  background-color: #d4d4d4;
   color: white;
   text-align: center;
   margin-top: -12px;
@@ -88,6 +108,62 @@ body {
   width: 80%;
   left: 30px;
   top: 100px;
-  background-color: #DB3022;
+  background-color: #db3022;
   color: white;
+}
+
+/* @media screen and (max-width: 430px) {
+  .form-control {
+    width: 150px;
+    height: 35px;
+    border-radius: 50px;
+    margin-left: 0px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .searchAndSort {
+    left: 0px;
+  }
+  .form-control {
+    /* width: 250px;
+    height: 35px;
+    border-radius: 50px; */
+    margin-left: 0px;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .navbar-nav {
+    text-align: center;
+    display: flex;
+    /* display: non; */
+  }
+
+  .searchAndSort {
+    top: 2px;
+  }
+
+  .shopping-summary {
+    margin-top: 20px;
+  }
+  .shopping-summary .card {
+    width: 35rem !important;
+  }
+
+  /* #mybag {
+    margin-top: 250px;
+  } */
+}
+
+@media screen and (min-width: 1199px) {
+  .form-control {
+    width: 500px;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: 50px;
+  }
 }
